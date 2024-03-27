@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الرئيسية</title>
+    <link rel="stylesheet" href="../ar_css/home.css" />
+    <link rel="icon" href="../imgs/algerie.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../imgs/algerie.png" alt="algerian flag" />
+      </div>
+
+      <div class="gov">
+        <p>الجمهورية الجزائرية الديمقراطية الشعبية</p>
+        <p>وزارة المالية</p>
+      </div>
+
+      <div class="lang">
+        <button>
+          <a href="../en_html/enhome.html">
+            <img src="../imgs/usa.png" alt="en" />
+          </a>
+        </button>
+      </div>
+    </header>
+
+    <section>
+      <p>مرحبا بك يمكنك بدأ عملية الدفع</p>
+
+      <div class="number">
+        <div class="image">
+          <img src="../imgs/Violation.png" alt="example" />
+
+          <i class="fa-solid fa-chevron-up"></i>
+          <p>رقم المخالفة</p>
+        </div>
+        <form method="get" action="../ar_html/payment.html">
+          <input
+            min="1000000"
+            max="99999999"
+            type="number"
+            placeholder="ادخل رقم المخالفة"
+            required
+            class="number-to-text"
+            name="number"
+            autofocus
+          />
+
+          <button type="submit" value="طرق الدفع" class="pay">طرق الدفع</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

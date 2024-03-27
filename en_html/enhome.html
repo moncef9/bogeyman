@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="../ar_css/home.css" />
+    <link rel="icon" href="../imgs/algerie.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <style>
+      * {
+        direction: ltr;
+      }
+      input::placeholder {
+        padding-left: 1em;
+      }
+      .number-to-text {
+        padding-left: 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../imgs/algerie.png" alt="algerian flag" />
+      </div>
+
+      <div class="gov">
+        <p>People's Democratic Republic of Algeria</p>
+        <p>Ministry of Finance</p>
+      </div>
+
+      <div class="lang">
+        <button>
+          <a href="../ar_html/home.html">
+            <img src="../imgs/ksa.png" alt="ar" />
+          </a>
+        </button>
+      </div>
+    </header>
+
+    <section>
+      <p>Welcome, you can start the payment process</p>
+
+      <div class="number">
+        <form method="get" action="../en_html/enpayment.html">
+          <input
+            min="1000000"
+            max="99999999"
+            type="number"
+            placeholder="Enter the violation number"
+            required
+            class="number-to-text"
+            name="number"
+            autofocus
+          />
+
+          <button type="submit" value="Payment Methods" class="pay">
+            Payment Methods
+          </button>
+        </form>
+        <div class="image">
+          <img src="../imgs/Violation.png" alt="example" />
+
+          <i class="fa-solid fa-chevron-up"></i>
+          <p>Violation Number</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

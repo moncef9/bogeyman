@@ -1,0 +1,109 @@
+:root {
+  --main-color: #074382;
+}
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  direction: rtl;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #eee;
+}
+header {
+  background-color: var(--main-color);
+  width: 100vw;
+  height: 18vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 4em;
+}
+.logo {
+  height: 4em;
+  width: 6em;
+}
+.logo img {
+  height: 100%;
+  width: 100%;
+}
+.lang {
+  width: 3em;
+  height: 2em;
+}
+.gov {
+  height: 100%;
+  width: 40em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  color: white;
+}
+.gov p {
+  font-size: 1.5em;
+}
+section {
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.check {
+  height: 85%;
+  background-color: #fff;
+  width: 60%;
+  border-radius: 2em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+section p {
+  font-size: 1.3em;
+  padding-top: 1em;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  margin-bottom: 3em;
+}
+input.confirm::-webkit-outer-spin-button,
+input.confirm::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.confirm {
+  height: 4em;
+  width: 19em;
+  background-color: #eee;
+  border: none;
+  border-radius: 0.9em;
+  outline: none;
+  cursor: auto;
+  padding-right: 0.5em;
+}
+input::placeholder {
+  padding-right: 1em;
+  font-size: 1.2em;
+}
+.pay {
+  height: 3em;
+  width: 9em;
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 1.5em;
+  cursor: pointer;
+}
+form button {
+  color: #ffffff;
+}
+span {
+  font-weight: bold;
+}
